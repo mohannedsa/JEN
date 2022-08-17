@@ -14,9 +14,8 @@ print(today)
 from selenium.webdriver.chrome.options import Options
 
 options = Options()
-options.binary_location = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-driver_path = "C:\\Users\\mohan_\\DEVS\\webDrivers\\chromedriver.exe"
-driver = webdriver.Chrome(options = options, executable_path = driver_path)
+driver_path = "webDrivers/geckodriver.exe"
+driver = webdriver.Chrome(executable_path = driver_path)
 driver.get("https://www.sama.gov.sa/en-US/pages/default.aspx")
 
 
